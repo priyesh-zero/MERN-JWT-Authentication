@@ -4,7 +4,8 @@
   "description": "This is a MERN stack  app\u001b[D\u001b[D\u001b[\u001b[3~\u001b[C\u001b[C\u001b[C\u001b[C\u001b[Cthat implies JWT token based authentications.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/priyesh-zero/MERN-JWT-Authentication/issues"
   },
-  "homepage": "https://github.com/priyesh-zero/MERN-JWT-Authentication#readme"
+  "homepage": "https://github.com/priyesh-zero/MERN-JWT-Authentication#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.1"
+  }
 }
