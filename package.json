@@ -19,7 +19,8 @@
   "homepage": "https://github.com/priyesh-zero/MERN-JWT-Authentication#readme",
   "dependencies": {
     "dotenv": "^8.2.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.1"
