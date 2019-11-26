@@ -4,6 +4,7 @@ const jwtMiddleWare = (req, res, next) => {
     token = req.header('Authentication')
     if ( token ) {
         tokenResponse = verify(token.split(' ')[1])
+        console.log(tokenResponse)
         if (tokenResponse) {
             req.user = tokenResponse.userId
             next()
@@ -15,7 +16,11 @@ const jwtMiddleWare = (req, res, next) => {
             })
         }
     } else { 
-        res.sendCode(403)
+        res.json({
+            code: 403,
+            error: "Token Invalid",
+            success: false
+        })
     }
 }
 

@@ -8,10 +8,11 @@ router.post('/login', (req, res) => {
         .get(`users?email=${req.body.email}&username=${req.body.password}`)
         .then(response => {
             if (response.data.length > 0) { 
+                response.data[0]['token'] = sign(response.data[0].id)
                 res.json({
                     success: true,
                     code: 200,
-                    token: sign(response.data[0].id)
+                    user: response.data[0]
                 })
              } else {
                 res.json({

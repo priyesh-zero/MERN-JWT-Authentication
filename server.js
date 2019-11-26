@@ -4,6 +4,8 @@ const dotenv = require('dotenv')
 const app = express()
 const apiRoutes = require('./routes/apiRoutes')
 
+const jwtMiddleWare = require('./middleware/jwt-auth')
+
 dotenv.config()
 
 app.use(express.json())
