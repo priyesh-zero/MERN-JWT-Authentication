@@ -1,0 +1,19 @@
+{
+  "name": "jwtmern",
+  "version": "1.0.0",
+  "description": "This is a MERN stack  app\u001b[D\u001b[D\u001b[\u001b[3~\u001b[C\u001b[C\u001b[C\u001b[C\u001b[Cthat implies JWT token based authentications.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/priyesh-zero/MERN-JWT-Authentication.git"
+  },
+  "author": "Priyesh Shrivastava",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/priyesh-zero/MERN-JWT-Authentication/issues"
+  },
+  "homepage": "https://github.com/priyesh-zero/MERN-JWT-Authentication#readme"
+}
