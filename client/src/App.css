@@ -20,3 +20,14 @@
 .App-link {
   color: #09d3ac;
 }
+
+.loader {
+  animation-name: spin;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+  from {transform: translate(0, -50%) rotate(0deg);}
+  to {transform: translate(0, -50%) rotate(360deg);}
+}
